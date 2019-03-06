@@ -31,7 +31,7 @@ import pycosat
 
 def cms_setup(clauses, m):
     solver = pycryptosat.Solver()
-    solver.add_clauses(clauses, max_var=m)
+    solver.add_clauses(clauses)
     return solver
 
 
